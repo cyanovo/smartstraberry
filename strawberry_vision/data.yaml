@@ -1,0 +1,10 @@
+# Relative to this YAML file; scripts resolve it to an absolute path.
+path: dataset
+train: images/train
+val: images/val
+test: images/test
+# Teaching taxonomy v0.1; review labels before preparing dataset splits.
+names:
+  0: unripe
+  1: turning
+  2: ripe

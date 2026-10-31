@@ -1,0 +1,22 @@
+{
+  "release": "student-2026.10.26",
+  "environment": "teacher machine, isolated delivery directory and ports",
+  "checks": {
+    "offline_environment_reconstruction": "PASS",
+    "frontend_build": "PASS",
+    "cleaning_import": "PASS",
+    "yolo_weight_load": "PASS",
+    "dataset_566_images_1734_boxes": "PASS",
+    "isolated_database_restore": "PASS",
+    "authenticated_api_reads": "PASS",
+    "album_zip_570_original_hashes": "PASS",
+    "unit_tests_37": "PASS",
+    "browser_mock_regression": "PASS",
+    "second_machine_deployment": "NOT_TESTED",
+    "cloud_ai_and_worker": "NOT_TESTED",
+    "new_training_run": "NOT_TESTED",
+    "physical_hardware": "NOT_TESTED"
+  },
+  "archive_integrity": "Finalizer checks all CRCs and writes the external .zip.sha256 only after success",
+  "full_acceptance": false
+}

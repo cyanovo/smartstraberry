@@ -1,0 +1,16 @@
+# YOLOv11 依赖
+# ultralytics >= 8.3.0 才支持 YOLOv11
+ultralytics>=8.3.0
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+matplotlib>=3.7.0
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# 可选：模型导出
+# onnx>=1.14.0
+# onnxruntime-gpu>=1.16.0
+# tensorrt>=8.6.0

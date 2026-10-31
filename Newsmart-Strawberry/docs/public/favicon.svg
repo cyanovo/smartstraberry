@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <path d="M64 12 C30 10 10 36 8 52 C6 68 4 74 16 80 C18 78 20 72 22 70 C24 74 26 82 30 88 C34 94 38 100 40 102 C42 104 40 108 36 112 L92 112 C88 108 86 104 88 102 C90 100 94 94 98 88 C102 82 104 74 106 70 C108 72 110 78 112 80 C124 74 122 68 120 52 C118 36 98 10 64 12Z" fill="#E53E3E"/>
+  <ellipse cx="50" cy="55" rx="12" ry="16" fill="#FC8181" opacity="0.6" transform="rotate(-15 50 55)"/>
+  <circle cx="42" cy="70" r="2" fill="#FED7D7"/>
+  <circle cx="58" cy="60" r="2" fill="#FED7D7"/>
+  <circle cx="70" cy="72" r="2" fill="#FED7D7"/>
+  <circle cx="82" cy="58" r="2" fill="#FED7D7"/>
+  <circle cx="52" cy="88" r="2" fill="#FED7D7"/>
+  <circle cx="68" cy="90" r="2" fill="#FED7D7"/>
+  <circle cx="80" cy="82" r="2" fill="#FED7D7"/>
+  <circle cx="90" cy="70" r="2" fill="#FED7D7"/>
+  <circle cx="38" cy="82" r="2" fill="#FED7D7"/>
+  <path d="M64 12 C60 0 48 -4 36 2 C44 8 52 10 56 16 C58 10 60 4 64 12Z" fill="#38A169"/>
+  <path d="M64 12 C68 0 80 -4 92 2 C84 8 76 10 72 16 C70 10 68 4 64 12Z" fill="#48BB78"/>
+  <path d="M64 12 L64 2" stroke="#276749" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,52 @@
+services:
+  api:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/greenhouse-api:${GREENHOUSE_VERSION:-0.7.0.beta2}
+    pull_policy: missing
+
+  worker:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/greenhouse-api:${GREENHOUSE_VERSION:-0.7.0.beta2}
+    pull_policy: missing
+
+  sandbox-provisioner:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/greenhouse-sandbox-provisioner:${GREENHOUSE_VERSION:-0.7.0.beta2}
+    pull_policy: missing
+
+  web:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/greenhouse-web:${GREENHOUSE_VERSION:-0.7.0.beta2}
+    pull_policy: missing
+
+  graph:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/neo4j:5.26
+    pull_policy: missing
+
+  etcd:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/quay.io/coreos/etcd:v3.5.5
+    pull_policy: missing
+
+  minio:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/minio/minio:RELEASE.2023-03-20T20-16-18Z
+    pull_policy: missing
+
+  milvus:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/milvusdb/milvus:v2.5.6
+    pull_policy: missing
+
+  postgres:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/postgres:16
+    pull_policy: missing
+
+  mosquitto:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/eclipse-mosquitto:2
+    pull_policy: missing
+
+  redis:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/redis:7-alpine
+    pull_policy: missing
+
+  mineru-api:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/mineru-vllm:latest
+    pull_policy: missing
+
+  paddlex:
+    image: ${LOCAL_DOCKER_REGISTRY:-localhost:5000}/paddlex:latest
+    pull_policy: missing

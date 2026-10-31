@@ -1,0 +1,338 @@
+.industrial-iot-view {
+  min-height: 100%;
+  background: var(--gray-25);
+}
+
+.header-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: var(--color-success-50);
+  color: var(--color-success-700);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.iot-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: var(--page-padding);
+}
+
+.overview-band,
+.monitor-section,
+.actuator-section,
+.light-section {
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-0);
+}
+
+.overview-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 520px);
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.all-stop-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  button { display: inline-flex; align-items: center; gap: 8px; min-height: 34px; }
+}
+
+.device-health {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  color: var(--gray-600);
+  font-size: 13px;
+
+  > span { display: inline-flex; align-items: center; gap: 8px; }
+}
+
+.overview-band h2 {
+  margin: 0;
+  color: var(--gray-1000);
+  font-size: 22px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.mode-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mode-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-10);
+}
+
+.mode-title,
+.mode-desc,
+.metric-label,
+.metric-range,
+.actuator-title,
+.actuator-desc {
+  display: block;
+}
+
+.mode-title,
+.actuator-title {
+  color: var(--gray-1000);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.mode-desc,
+.metric-range,
+.actuator-desc {
+  margin-top: 2px;
+  color: var(--gray-600);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 16px;
+}
+
+.monitor-section,
+.actuator-section,
+.light-section {
+  padding: 18px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--main-color);
+}
+
+.section-heading h3 {
+  margin: 0;
+  color: var(--gray-1000);
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 22px;
+}
+
+.metric-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.hydroponic-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 104px;
+  padding: 14px;
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-10);
+}
+
+.metric-icon {
+  flex: 0 0 auto;
+  color: var(--main-color);
+}
+
+.metric-body {
+  min-width: 0;
+}
+
+.metric-label {
+  color: var(--gray-600);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.metric-body strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--gray-1000);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.actuator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.actuator-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 82px;
+  padding: 14px;
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-10);
+}
+
+.actuator-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--main-color);
+}
+
+.overview-time,
+.command-status {
+  margin: 8px 0 0;
+  color: var(--gray-600);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.section-heading { flex-wrap: wrap; }
+.section-status { margin-left: auto; }
+.industrial-iot-view .overview-band h2 { margin: 0; }
+.metric-body strong { white-space: normal; overflow-wrap: anywhere; }
+.metric-body small { font-size: 13px; }
+.mode-item { flex-wrap: wrap; }
+.actuator-info svg { flex-shrink: 0; }
+
+.industrial-iot-view .relay-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-content: start;
+  gap: 10px;
+
+  .relay-actions { display: flex; align-items: center; }
+  .command-status { grid-column: 1 / -1; margin: 0; min-height: 36px; }
+}
+
+/* ---- 灯光控制 ---- */
+.light-top-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.light-switch-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 82px;
+  padding: 14px;
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-10);
+}
+
+.light-mode-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-10);
+}
+
+.light-slider-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.light-slider-card {
+  padding: 14px;
+  border: 1px solid var(--gray-150);
+  border-radius: 8px;
+  background: var(--gray-10);
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.slider-label {
+  color: var(--gray-1000);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.slider-value {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 1180px) {
+  .light-top-row,
+  .light-slider-row {
+    grid-template-columns: 1fr;
+  }
+  .overview-band,
+  .metrics-grid,
+  .actuator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hydroponic-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .overview-band {
+    padding: 16px;
+  }
+
+  .mode-panel,
+  .metric-list,
+  .hydroponic-list {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-body strong {
+    font-size: 22px;
+  }
+}

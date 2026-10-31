@@ -1,0 +1,28 @@
+# 单位信息配置文件
+# 用于配置网站的基本信息、品牌信息等
+
+# 组织信息
+organization:
+  name: "番茄精准智控"           # 完整组织名称
+  logo: "/favicon.svg"       # Logo文件路径（放在 web/public 目录下）
+  avatar: "/avatar.jpg"      # 头像文件路径（放在 web/public 目录下）
+  login_bg: "/images/Tomato/tomato-greenhouse-hero.png"  # 登录背景图片路径（放在 web/public 目录下）
+
+# 项目信息
+branding:
+  name: "番茄"
+  title: "AI 助农，智慧番茄管理系统"     # 系统标题
+  subtitle: "循迹小车自动巡检 · AI 识别成熟度 · 精准派发采摘 · 品质自动分级"          # 副标题（subtitles 为空时使用）
+  subtitles:
+    - "循迹小车自动巡检，成熟度实时感知"
+    - "AI 精准识别每一颗番茄，让采摘不再靠经验"
+    - "从扫描到派单，全链路智能决策"
+    - "数据驱动种植，让每一垄都尽在掌握"
+    - "病害预警、补光建议、营养调控，守护每一颗果实"
+    - "机器视觉 + 知识图谱，打造智慧番茄大棚"
+
+# 页脚信息
+footer:
+  copyright: "© 番茄 2026 v{{YUXI_VERSION}}"
+  user_agreement_url: "/protocols/user-agreement.template.html"
+  privacy_policy_url: "/protocols/privacy-policy.template.html"

@@ -1,0 +1,9 @@
+# Provisional mapping; human semantic review pending.
+path: dataset_maturity
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: Unripe
+  1: Half-ripe
+  2: Ripe
